@@ -1831,7 +1831,7 @@ ul.icons a {
     line-height: 4em; /* Adjusted line-height to match new height */
     text-align: center;
     border: 0;
-    font-size: 2em; /* Increased font size for larger icons */
+    font-size: 5em; /* Increased font size for larger icons */
 }
 
 
@@ -2781,16 +2781,4 @@ strong {
     background-color: rgba(255, 255, 255, 0.7); /* Added semi-transparent background */
     padding: 15px;
     border-radius: 5px;
-}
-.icons .icon {
-    font-size: 3rem; /* Adjust the size of the icons (default is 1rem) */
-    display: inline-block;
-    margin: 0 10px; /* Add spacing between icons */
-    text-decoration: none;
-}
-
-.icons .icon:hover {
-    color: #007bff; /* Optional: Add hover effect */
-    transform: scale(1.2); /* Optional: Slightly enlarge on hover */
-    transition: transform 0.2s ease-in-out;
 }
