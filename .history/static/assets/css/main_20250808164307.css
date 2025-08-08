@@ -2783,7 +2783,7 @@ strong {
     border-radius: 5px;
 }
 .icons .icon {
-    font-size: 2.7rem; /* Adjust the size of the icons (default is 1rem) */
+    font-size: 2.6rem; /* Adjust the size of the icons (default is 1rem) */
     display: inline-block;
     margin: 0 5px; /* Add spacing between icons */
     text-decoration: none;
