@@ -2731,7 +2731,7 @@ ul.icons a {
 }
 
 /* Mobile-friendly adjustments */
-@media (min-width: 330px) {
+@media (max-width: 350px) {
     #lightbox-img {
         max-width: 95%;
         max-height: 70%;

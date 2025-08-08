@@ -2731,7 +2731,7 @@ ul.icons a {
 }
 
 /* Mobile-friendly adjustments */
-@media (min-width: 330px) {
+@media (min-width: 500px) {
     #lightbox-img {
         max-width: 95%;
         max-height: 70%;
@@ -2783,9 +2783,9 @@ strong {
     border-radius: 5px;
 }
 .icons .icon {
-    font-size: 2rem; /* Adjust the size of the icons (default is 1rem) */
+    font-size: 1rem; /* Adjust the size of the icons (default is 1rem) */
     display: inline-block;
-    margin: 0 5px; /* Add spacing between icons */
+    margin: 0 1px; /* Add spacing between icons */
     text-decoration: none;
 }
 
