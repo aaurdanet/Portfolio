@@ -465,14 +465,14 @@ main [id] {
 	color: var(--text);
 }
 
-.skill-pills {
+.certs-pills {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 8px;
 	margin: 24px 0 0;
 }
 
-.skill-pills span {
+.certs-pills span {
 	font-size: 12.5px;
 	font-weight: 600;
 	padding: 7px 12px;
