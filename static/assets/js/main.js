@@ -74,10 +74,23 @@
 					c: colors[i % colors.length]
 				});
 			}
-			particleState = { w: w, h: h, particles: particles, raf: null };
+			particleState = { w: w, h: h, particles: particles, shootingStars: [], nextStarAt: performance.now() + 1500 + Math.random() * 2000, raf: null };
 		}
 
 		if (particleState.raf) cancelAnimationFrame(particleState.raf);
+
+		function spawnShootingStar() {
+			var angle = (Math.PI / 180) * (20 + Math.random() * 20);
+			var speed = 5 + Math.random() * 3;
+			return {
+				x: Math.random() * w * 0.7,
+				y: -20 - Math.random() * 40,
+				vx: Math.cos(angle) * speed,
+				vy: Math.sin(angle) * speed,
+				len: 90 + Math.random() * 70,
+				alpha: 1
+			};
+		}
 
 		function draw() {
 			ctx.clearRect(0, 0, w, h);
@@ -93,6 +106,43 @@
 				ctx.fillStyle = p.c;
 				ctx.fill();
 			});
+
+			if (!reduceMotion) {
+				var now = performance.now();
+				if (now > particleState.nextStarAt && particleState.shootingStars.length < 2) {
+					particleState.shootingStars.push(spawnShootingStar());
+					particleState.nextStarAt = now + 3500 + Math.random() * 5500;
+				}
+
+				particleState.shootingStars = particleState.shootingStars.filter(function (s) {
+					s.x += s.vx;
+					s.y += s.vy;
+					s.alpha -= 0.012;
+					return s.alpha > 0 && s.x < w + s.len && s.y < h + s.len;
+				});
+
+				particleState.shootingStars.forEach(function (s) {
+					var mag = Math.sqrt(s.vx * s.vx + s.vy * s.vy) || 1;
+					var ux = s.vx / mag, uy = s.vy / mag;
+					var tailX = s.x - ux * s.len, tailY = s.y - uy * s.len;
+					var grad = ctx.createLinearGradient(tailX, tailY, s.x, s.y);
+					grad.addColorStop(0, "rgba(200,224,240,0)");
+					grad.addColorStop(1, "rgba(255,255,255," + (0.85 * s.alpha) + ")");
+					ctx.beginPath();
+					ctx.moveTo(tailX, tailY);
+					ctx.lineTo(s.x, s.y);
+					ctx.strokeStyle = grad;
+					ctx.lineWidth = 1.5;
+					ctx.lineCap = "round";
+					ctx.stroke();
+
+					ctx.beginPath();
+					ctx.arc(s.x, s.y, 1.4, 0, Math.PI * 2);
+					ctx.fillStyle = "rgba(255,255,255," + s.alpha + ")";
+					ctx.fill();
+				});
+			}
+
 			if (!reduceMotion) particleState.raf = requestAnimationFrame(draw);
 		}
 		draw();
