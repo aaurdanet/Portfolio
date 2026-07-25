@@ -480,6 +480,32 @@ main [id] {
 	background: var(--surface);
 	border: 1px solid var(--border);
 	color: var(--text);
+	transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+/* Issuer brand colors on hover: AWS orange, GIAC/SANS navy, CompTIA red, Google blue */
+.certs-pills .pill-aws:hover {
+	background: #ff9900;
+	border-color: #ff9900;
+	color: #1a1200;
+}
+
+.certs-pills .pill-giac:hover {
+	background: #0056a4;
+	border-color: #0056a4;
+	color: #fff;
+}
+
+.certs-pills .pill-comptia:hover {
+	background: #c8102e;
+	border-color: #c8102e;
+	color: #fff;
+}
+
+.certs-pills .pill-google:hover {
+	background: #4285f4;
+	border-color: #4285f4;
+	color: #fff;
 }
 
 .logo-groups {
