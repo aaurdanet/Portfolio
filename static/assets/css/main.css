@@ -242,6 +242,7 @@ main [id] {
 }
 
 .hero h1 {
+	font-family: var(--f-mono);
 	font-size: clamp(32px, 5.5vw, 52px);
 	line-height: 1.08;
 	letter-spacing: -0.02em;
