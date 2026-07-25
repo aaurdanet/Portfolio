@@ -1,183 +1,153 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Antonio Urdaneta Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="static/assets/css/main.css" />
-		<link rel="icon" href="static/assets/css/images/aulogo.jpg">
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Antonio Urdaneta — Software Engineer &amp; Cybersecurity Analyst</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Portfolio of Antonio Urdaneta — software engineer, cloud engineer, and cybersecurity analyst." />
+	<link rel="icon" href="static/assets/css/images/aulogo.jpg" />
+	<link rel="stylesheet" href="static/assets/css/main.css" />
+</head>
+<body>
 
-		<!-- Header -->
-			<div id="header">
+	<header class="site-header">
+		<div class="header-inner">
+			<a class="brand" href="#top">
+				<img class="brand-avatar" src="static/images/avatar.jpg" alt="" />
+				<span>Antonio Urdaneta</span>
+			</a>
 
-				<div class="top">
+			<button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle navigation">
+				<svg class="icon-open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+				<svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+			</button>
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="static/images/avatar.jpg" alt="" /></span>
-							<h1 id="title">Antonio Urdaneta</h1>
-							
+			<nav class="site-nav" id="siteNav">
+				<ul>
+					<li><a href="#top" class="nav-link" data-section="top">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+						Intro
+					</a></li>
+					<li><a href="#portfolio" class="nav-link" data-section="portfolio">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+						Portfolio
+					</a></li>
+					<li><a href="#skills" class="nav-link" data-section="skills">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+						Skills
+					</a></li>
+					<li><a href="#contact" class="nav-link" data-section="contact">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+						Contact
+					</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+
+		<!-- Intro -->
+		<section class="hero" id="top">
+			<canvas class="particle-layer" id="particles" aria-hidden="true"></canvas>
+			<div class="container hero-inner">
+				<p class="kicker">Software · Cloud · Security</p>
+				<h1>Hi, I'm Antonio Urdaneta.</h1>
+				<p class="role">Ignite IT Rotational Associate, NextEra Energy</p>
+				<p class="bio">I collaborate with diverse teams to develop and implement innovative IT solutions. I hold a Bachelor's degree in Information Technology, with a minor in Secure Computing and Networks, from the University of Central Florida, and I'm certified in AWS, GIAC, and CompTIA.</p>
+				<p class="bio">My skill set spans Python, Java, TypeScript, PowerShell, Bash, C++, and C, alongside web development — and I'm fluent in both English and Spanish. I'm passionate about solving complex IT challenges, optimizing systems, and expanding my technical expertise.</p>
+				<div class="hero-actions">
+					<a href="#portfolio" class="btn btn-primary">View my work</a>
+					<a href="cv/resume_index.html" class="btn btn-ghost">Resume PDF</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Portfolio -->
+		<section class="section" id="portfolio">
+			<div class="container">
+				<p class="eyebrow">// selected work</p>
+				<h2>Project Portfolio</h2>
+				<p class="section-intro">In my software engineering journey I've built distributed web applications, database systems, cybersecurity tools, and automation scripts — from user-friendly web apps to data scrapers, encryption algorithms, and web-automated bots. Each card below opens a small photo reel of the build. Check out my <a href="https://github.com/aaurdanet" style="color: var(--accent);">GitHub</a> for more.</p>
+
+				<div class="project-grid">
+
+					<article class="project-card" data-gallery="threetier" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Open Three-Tier Web Application photo reel">
+						<div class="thumb">
+							<img src="static/images/THREE-TIER.jpg" alt="Three-Tier Web Application screenshot" loading="lazy" />
+							<span class="gallery-badge">⤢ 6</span>
 						</div>
-						<div id ="description">
-							<p>Software Engineer, Cloud Engineer, Cybersecurity Analyst<br> </p>
+						<div class="card-body">
+							<p class="tag">SSMS · SQL · Java · JSP</p>
+							<h3>Three-Tier Web Application</h3>
+							<p>Techniques for building distributed web applications: Java Servlets and JSP running on a Tomcat server, accessing and maintaining a persistent SQL Server Management Studio database via JDBC.</p>
 						</div>
+					</article>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#skills" id="Skills-link"><span class="icon solid fa-tools">Skills and Certifications</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
+					<article class="project-card" data-gallery="routing" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Open Package Routing Simulator photo reel">
+						<div class="thumb">
+							<img src="static/images/Routing.jpg" alt="Package Routing Simulator screenshot" loading="lazy" />
+							<span class="gallery-badge">⤢ 5</span>
+						</div>
+						<div class="card-body">
+							<p class="tag">Java · Concurrency</p>
+							<h3>Package Routing Simulator</h3>
+							<p>An automated package routing system built with multi-threaded Java, efficiently managing and synchronizing threads across stations and conveyors with optimized algorithms.</p>
+						</div>
+					</article>
+
+					<article class="project-card" data-gallery="password" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Open Secure Password Management System photo reel">
+						<div class="thumb">
+							<img src="static/images/Password.jpg" alt="Secure Password Management System screenshot" loading="lazy" />
+							<span class="gallery-badge">⤢ 4</span>
+						</div>
+						<div class="card-body">
+							<p class="tag">Python · Tkinter · JSON</p>
+							<h3>Secure Password Management System</h3>
+							<p>A password manager adhering to NIST standards, with secure JSON storage for credentials and URL-based retrieval for enhanced security and usability.</p>
+						</div>
+					</article>
+
+					<article class="project-card" data-gallery="smartmoney" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Open SmartMoney Web Application photo reel">
+						<div class="thumb">
+							<img src="static/images/Money.jpg" alt="SmartMoney Web Application screenshot" loading="lazy" />
+							<span class="gallery-badge">⤢ 13</span>
+						</div>
+						<div class="card-body">
+							<p class="tag">HTML · JS · OpenAI API</p>
+							<h3>SmartMoney Web Application</h3>
+							<p>A personal finance app with budgeting, expense tracking, and goal setting — plus an integrated AI assistant and finance glossary for a seamless experience.</p>
+							<a href="https://www.youtube.com/watch?v=6dP4LYqnzZg&t=7s" class="demo-link" onclick="event.stopPropagation();" target="_blank" rel="noopener">Watch the prototype demo ↗</a>
+						</div>
+					</article>
+
+					<article class="project-card" data-gallery="twotier" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Open Client Server Application photo reel">
+						<div class="thumb">
+							<img src="static/images/TWO-TIER.jpg" alt="Client Server Application screenshot" loading="lazy" />
+							<span class="gallery-badge">⤢ 7</span>
+						</div>
+						<div class="card-body">
+							<p class="tag">Java · SQL · JDBC</p>
+							<h3>Client Server Application</h3>
+							<p>Secure execution of SQL commands on MySQL databases via JDBC, with role-based access control and a specialized accountant view that logs transaction data per user.</p>
+						</div>
+					</article>
+
+					<article class="project-card" data-gallery="affine" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Open Affine Cipher photo reel">
+						<div class="thumb">
+							<img src="static/images/Affine.jpg" alt="Affine Cipher screenshot" loading="lazy" />
+							<span class="gallery-badge">⤢ 3</span>
+						</div>
+						<div class="card-body">
+							<p class="tag">Python</p>
+							<h3>Affine Cipher</h3>
+							<p>A substitution cipher using a mathematical function to encrypt and decrypt text, including a brute-force method to decode ciphertext when the keys are unknown.</p>
+						</div>
+					</article>
 
 				</div>
-				<div class="bottom" id="resume">
-					<!-- Social Icons -->
-					<p>
-						<a href="cv/resume_index.html" class="icon" style="color: inherit;">
-							<a href="cv/resume_index.html" class="button scrolly">Resume PDF</a>
-						</a>
-					</p>
-				</div>	
-
 			</div>
-
-		<!-- Main -->
-			<div id="main">
-
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
-
-							<header>
-								<h2 class="alt">Hello World! I'm<strong> Antonio Urdaneta</strong></h2>
-								<p style="color: white;">I am an Ignite IT Rotational Associate at NextEra Energy, where I collaborate with diverse teams to develop and implement innovative IT solutions.</p>
-
-								<p style="color: white;">I hold a Bachelor's degree in Information Technology, with a minor in
-								Secure Computing and Networks, from the University of Central Florida. I have also obtained
-								several certifications, including AWS, GIAC, Google, and CompTIA. My skill set includes proficiency in Python,
-								Java, TypeScript, Powershell, Bash, C++, and C, as well as web development. I am fluent in both English and
-								Spanish.</p>
-
-								<p style="color: white;">I am passionate about solving complex IT challenges, optimizing systems, and expanding my technical expertise.</p>
-									
-							</header>
-
-							<footer>
-								<a href="#portfolio" class="button scrolly">Portfolio</a>
-							</footer>
-
-						</div>
-					</section>
-
-
-										<!-- Portfolio Section -->
-						<section id="portfolio" class="two">
-							<div class="container">
-
-								<header>
-									<h2>Project Portfolio</h2>
-								</header>
-
-								<p class="Portfolio_description">Welcome to my project portfolio! In my software engineering journey, 
-									I've undertaken various projects highlighting my programming skills, database management, cybersecurity and web development capabilities.
-									From building user-friendly web applications to creating data scrapers, encryption algorithms, and web-automated bots. I strive to address real-world challenges through 
-									innovative technology and coding solutions. Explore my work to see how I blend creativity with technical expertise. I invite you also to check out my GitHub for even more projects!</p>
-									
-								<div class="row">
-									<div class="col-4 col-12-mobile">
-										<article class="item">
-											<a href="#" class="image fit" data-sub-images='["static/images/THREE-TIER.jpg", "static/images/THREE-TIER1.jpg", "static/images/THREE-TIER2.jpg", "static/images/THREE-TIER3.jpg", "static/images/THREE-TIER4.jpg", "static/images/THREE-TIER5.jpg"]' >
-												<img src="static/images/THREE-TIER.jpg" alt="MYSQL THREE-TIER WEBAPP images" style="width: 100%; height: 200px; object-fit: cover;" />
-											</a>
-											<header>
-												<h3 class="project-title">Three-Tier Web Application</h3>
-												<details style="margin: 10px;">
-													<summary style="transition: all 0.3s ease; cursor: pointer; box-shadow: 0 0 0 rgba(0,0,0,0); transition: box-shadow 0.3s ease-in-out;" onmouseover="this.style.boxShadow='0 5px 15px rgba(0,0,0,0.3)';" onmouseout="this.style.boxShadow='0 0 0 rgba(0,0,0,0)';">Details</summary>
-													<p style="text-align: left; margin: 10px;"><strong>Description:</strong> This Project showcases various techniques in building distributed web-based applications. The application uses Java Servlets and JSP technology, running on a Tomcat server, to access and maintain a persistent SQL Server Management Studio database via JDBC.</p>
-													<p style="text-align: left; margin: 10px;"><strong>Tech Stack:</strong> SSMS, SQL, Java, JavaScript, jquery, HTML, CSS, Jakarta EE, XML, Apache Tomcat Server</p>
-												</details>
-											</header>
-										</article>
-										<article class="item">
-											<a href="#" class="image fit" data-sub-images='["static/images/Routing1.jpg", "static/images/Routing2.jpg", "static/images/Routing3.jpg", "static/images/Routing4.jpg", "static/images/Routing5.jpg"]' >
-												<img src="static/images/Routing.jpg" alt="Package Routing Simulator images" style="width: 100%; height: 200px; object-fit: cover;" />
-											</a>
-											<header>
-												<h3 class="project-title">Package Routing Simulator</h3>
-												<details style="margin: 10px;">
-													<summary style="transition: all 0.3s ease; cursor: pointer; box-shadow: 0 0 0 rgba(0,0,0,0); transition: box-shadow 0.3s ease-in-out;" onmouseover="this.style.boxShadow='0 5px 15px rgba(0,0,0,0.3)';" onmouseout="this.style.boxShadow='0 0 0 rgba(0,0,0,0)';">Details</summary>
-													<p style="text-align: left; margin: 10px;"><strong>Description:</strong> This project simulates an automated package routing system using multi-threaded Java programming, focusing on efficiently managing and synchronizing threads across stations and conveyors with optimized algorithms.</p>
-													<p style="text-align: left; margin: 10px;"><strong>Tech Stack:</strong> Java (Multithreading, Concurrent Libraries, J2SE, J2EE)</p>
-												</details>
-											</header>
-										</article>
-									</div>
-									<div class="col-4 col-12-mobile">
-										<article class="item">
-											<a href="#" class="image fit" data-sub-images='["static/images/Password.jpg", "static/images/Password1.jpg", "static/images/Password2.jpg", "static/images/Password3.jpg"]' data-description="Technologies used: Python, SQLite, Tkinter">
-												<img src="static/images/Password.jpg" alt="Secure Password Management System images" style="width: 100%; height: 200px; object-fit: cover;" />
-											</a>
-											<header>
-												<h3 class="project-title">Secure Password Management System</h3>
-												<details style="margin: 10px;">
-													<summary style="transition: all 0.3s ease; cursor: pointer; box-shadow: 0 0 0 rgba(0,0,0,0); transition: box-shadow 0.3s ease-in-out;" onmouseover="this.style.boxShadow='0 5px 15px rgba(0,0,0,0.3)';" onmouseout="this.style.boxShadow='0 0 0 rgba(0,0,0,0)';">Details</summary>
-													<p style="text-align: left; margin: 10px;"><strong>Description:</strong> Developed a password manager adhering to NIST standards, with secure JSON storage for credentials and URL-based retrieval for enhanced security and usability.</p>
-													<p style="text-align: left; margin: 10px;"><strong>Tech Stack:</strong> Python, Tkinter, JSON</p>
-												</details>
-											</header>
-										</article>
-										<article class="item">
-											<a href="#" class="image fit" data-sub-images='["static/images/Money1.jpg", "static/images/Money2.jpg", "static/images/Money33.jpg", "static/images/Money3.jpg", "static/images/Money4.jpg", "static/images/Money5.jpg", "static/images/Money6.jpg", "static/images/Money7.jpg", "static/images/Money8.jpg", "static/images/Money9.jpg", "static/images/Money10.jpg", "static/images/Money11.jpg", "static/images/Money12.jpg"]'>
-												<img src="static/images/Money.jpg" alt="Financial Management Web Application images" style="width: 100%; height: 200px; object-fit: cover;" />
-											</a>
-											<header>
-												<h3 class="project-title">SmartMoney Web Application</h3>
-												<details style="margin: 10px;">
-													<summary style="transition: all 0.3s ease; cursor: pointer; box-shadow: 0 0 0 rgba(0,0,0,0); transition: box-shadow 0.3s ease-in-out;" onmouseover="this.style.boxShadow='0 5px 15px rgba(0,0,0,0.3)';" onmouseout="this.style.boxShadow='0 0 0 rgba(0,0,0,0)';">Details</summary>
-													<p style="text-align: left; margin: 10px;"><strong>Description:</strong> A comprehensive web application for managing personal finances, including budgeting, expense tracking, and goal setting. It features tools for interest savings, loan payments, and personalized budgeting based on user feedback. The app also integrates an AI assistant and a finance glossary to enhance user understanding, ensuring a seamless financial management experience.
-														 <a href="https://www.youtube.com/watch?v=6dP4LYqnzZg&t=7s">View the final prototype here</a>.</p>
-													<p style="text-align: left; margin: 10px;"><strong>Tech Stack:</strong> HTML, CSS, JavaScript, OpenAI API (ChatGPT)</p>
-												</details>
-											</header>
-										</article>
-									</div>
-									<div class="col-4 col-12-mobile">
-										<article class="item">
-											<a href="#" class="image fit" data-sub-images='["static/images/TWO-TIER.jpg", "static/images/TWO-TIER1.jpg", "static/images/TWO-TIER2.jpg", "static/images/TWO-TIER3.jpg", "static/images/TWO-TIER4.jpg", "static/images/TWO-TIER5.jpg", "static/images/TWO-TIER6.jpg"]' data-description="Technologies used: Java, SQL, JDBC">
-												<img src="static/images/TWO-TIER.jpg" alt="Two-Tier Database Application images" style="width: 100%; height: 200px; object-fit: cover;" />
-											</a>
-											<header>
-												<h3 class="project-title">Client Server Application</h3>
-												<details style="margin: 10px;">
-													<summary style="transition: all 0.3s ease; cursor: pointer; box-shadow: 0 0 0 rgba(0,0,0,0); transition: box-shadow 0.3s ease-in-out;" onmouseover="this.style.boxShadow='0 5px 15px rgba(0,0,0,0.3)';" onmouseout="this.style.boxShadow='0 0 0 rgba(0,0,0,0)';">Details</summary>
-													<p style="text-align: left; margin: 10px;"><strong>Description:</strong> An intuitive Java application that enables secure execution of SQL commands on MySQL databases via JDBC. It supports role-based access control and efficient query management for streamlined database operations.
-														 Additionally, it includes a specialized application for accountants that logs transaction data for each user in a separate database.</p>
-													<p style="text-align: left; margin: 10px;"><strong>Tech Stack:</strong> Java, SQL, JDBC</p>
-												</details>
-											</header>
-										</article>
-										<article class="item">
-											<a href="#" class="image fit" data-sub-images='["static/images/Affine1.jpg", "static/images/Affine2.jpg", "static/images/Affine3.jpg"]' data-description="Technologies used: Python, Cryptography">
-												<img src="static/images/Affine.jpg" alt="Affine Cipher Encryptor & Decryptor images" style="width: 100%; height: 200px; object-fit: cover;" />
-											</a>
-											<header>
-												<h3 class="project-title">Affine Cipher </h3>
-												<details style="margin: 10px;">
-													<summary style="transition: all 0.3s ease; cursor: pointer; box-shadow: 0 0 0 rgba(0,0,0,0); transition: box-shadow 0.3s ease-in-out;" onmouseover="this.style.boxShadow='0 5px 15px rgba(0,0,0,0.3)';" onmouseout="this.style.boxShadow='0 0 0 rgba(0,0,0,0)';">Details</summary>
-													<p style="text-align: left; margin: 10px;"><strong>Description:</strong> This Python script implements an Affine Cipher, a type of substitution cipher that uses a mathematical function to encrypt and decrypt text. The script also includes a brute-force method to decode ciphertext when the keys are unknown.</p>
-													<p style="text-align: left; margin: 10px;"><strong>Tech Stack:</strong> Python</p>
-												</details>
-											</header>
-										</article>
-									</div>
-								</div>								
-							</div>
-						</section>
+		</section>
 
 				<!-- Skills -->
 				<section id="skills" class="three">
@@ -185,8 +155,8 @@
 						<header>
 							<h2>Technical Skills & Certifications</h2>
 						</header>
-						<p><strong>Certifications:</strong> CompTIA Security+, CompTIA Network+, AWS CCP, AWS SAA, GIAC GCIH, Google Cloud Generative AI Leader</p>
-						<p><strong>Programming:</strong> Python, TypeScript, Powershell, Bash, Java, C++, C, C#, MySQL Server, SSMS, PostgreSQL
+						<p><strong>Certifications:</strong> CompTIA Security+, CompTIA Network+, AWS CCP, AWS SAA, GIAC GCIH</p>
+						<p><strong>Programming:</strong> Python, TypeScript, Powershell, Bash, Java, C++, C, C#, MySQL Server, SSMS, PostgreSQL,
 						<p><strong>Technologies:</strong> Selenium, Pandas, Flask, Jinja, Django, RESTful API, NumPy, BeautifulSoup, BootStrap, JSP, XML, JSON, GitHub, Git, Android Studio, Linux, VMs, Active Directory, Microsoft Office</p>
 						<p><strong>Coursework:</strong> Advanced Java Programming, Databases Management, Data Structures and Algorithms, Computer Science, C programming, Enterprise Computing, Web Development, UX\UI design, System Administration, Secure Operating Systems, Network Security and Privacy, Cyber Defense Analysis, Cryptography and Information Security</p>
 						<p><strong>Languages:</strong> English (Fluent), Spanish (Native)</p>
@@ -260,51 +230,42 @@
 				<!-- https://devicon.dev/ -->
 				
 
-				<!-- Contact -->
-		
-					<section id="contact" class="four">
-						<div class="container">
-							<div class="bottom">
-							<ul class="icons">
-								<li><a href="tel:+17737079720" class="icon solid fa-phone"><span class="label">Twitter</span></a></li>
-								<li><a href="https://github.com/aaurdanet" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="https://www.linkedin.com/in/antoniourdaneta/" class="icon brands fa-linkedin"><span class="label">Dribbble</span></a></li>
-								<li><a href="mailto:antonioaurdanet@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-						</div>
+	<!-- Contact -->
+	<footer class="site-footer" id="contact">
+		<div class="container footer-inner">
+			<p>© <span id="year"></span> Antonio Urdaneta</p>
+			<ul class="footer-links">
+				<li><a href="https://github.com/aaurdanet" target="_blank" rel="noopener">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+					GitHub
+				</a></li>
+				<li><a href="https://www.linkedin.com/in/antoniourdaneta/" target="_blank" rel="noopener">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+					LinkedIn
+				</a></li>
+				<li><a href="mailto:antonioaurdanet@gmail.com">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+					Email
+				</a></li>
+			</ul>
+		</div>
+	</footer>
 
-			</div>
+	<!-- Lightbox -->
+	<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Project screenshots">
+		<button class="lb-close" id="lbClose" type="button" aria-label="Close">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+		</button>
+		<button class="lb-btn lb-prev" id="lbPrev" type="button" aria-label="Previous image">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+		</button>
+		<img class="lb-img" id="lbImg" src="" alt="Project screenshot" />
+		<button class="lb-btn lb-next" id="lbNext" type="button" aria-label="Next image">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+		</button>
+		<div class="lb-counter" id="lbCounter"></div>
+	</div>
 
-<!-- Lightbox Container -->
-<div id="lightbox" class="lightbox">
-    <button id="prev" class="lightbox-nav">&lt;</button>
-    <img id="lightbox-img" src="" alt="Enlarged Image" />
-    <button id="next" class="lightbox-nav">&gt;</button>
-</div>
-
-<!-- Footer -->
-
-
-<!-- Scripts -->
-<script src="static/assets/js/jquery.min.js"></script>
-<script src="static/assets/js/jquery.scrolly.min.js"></script>
-<script src="static/assets/js/jquery.scrollex.min.js"></script>
-<script src="static/assets/js/browser.min.js"></script>
-<script src="static/assets/js/breakpoints.min.js"></script>
-<script src="static/assets/js/util.js"></script>
-<script src="static/assets/js/main.js"></script>
-<script src="static/assets/js/imgs.js"></script>
-
-
-<!-- Lightbox Structure -->
-<div id="lightbox" style="display:none;">
-    <img id="lightbox-img" src="" alt=""/>
-    <div id="lightbox-description"></div>
-    <button id="prev">Prev</button>
-    <button id="next">Next</button>
-</div>
-
-
-</script>
+	<script src="static/assets/js/main.js"></script>
 </body>
 </html>
