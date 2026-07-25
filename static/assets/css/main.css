@@ -1,5 +1,5 @@
 /*
-	Antonio Urdaneta — portfolio
+	Antonio Urdaneta portfolio
 	Graphite theme: dark neutral ground, #498bb8 accent (carried over from the
 	previous design), monospace utility labels, tiny particle field in the hero.
 */
@@ -8,7 +8,7 @@
 	--bg: #15171b;
 	--bg-alt: #191c21;
 	--surface: #1e2227;
-	--text: #ececea;
+	--text: #c7cbd1;
 	--muted: #97999f;
 	--border: #2a2e34;
 	--accent: #498bb8;
@@ -80,7 +80,7 @@ main [id] {
 }
 
 .header-inner {
-	max-width: var(--container);
+	max-width: 760px;
 	margin: 0 auto;
 	padding: 14px 24px;
 	display: flex;
@@ -210,7 +210,7 @@ main [id] {
 .hero {
 	position: relative;
 	overflow: hidden;
-	padding: 96px 0 88px;
+	padding: 44px 0 72px;
 	background: var(--bg);
 }
 
@@ -482,49 +482,76 @@ main [id] {
 	color: var(--text);
 }
 
+.logo-groups {
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+	margin-top: 32px;
+}
+
 .logos-label {
 	text-transform: uppercase;
 	letter-spacing: 0.07em;
 	font-size: 11px;
 	font-weight: 700;
 	color: var(--muted);
-	margin: 32px 0 12px;
+	margin: 0 0 12px;
 }
 
-.logo-strip {
+.logo-row {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 10px;
+	align-items: center;
+	gap: 22px;
 }
 
-.logo-chip {
-	width: 42px;
-	height: 42px;
+.logo-item {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	height: 42px;
+	padding: 0 10px;
 	background: var(--surface);
 	border: 1px solid var(--border);
-	border-radius: 9px;
+	border-radius: 7px;
 	transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
 }
 
-.logo-chip img {
-	width: 22px;
-	height: 22px;
+.logo-item img {
+	height: 20px;
+	width: auto;
+	max-width: 60px;
 	object-fit: contain;
 	filter: grayscale(1) opacity(0.55);
 	transition: filter 0.18s ease;
 }
 
-.logo-chip:hover {
+.logo-item:hover {
 	border-color: var(--accent);
-	transform: translateY(-2px);
 	box-shadow: 0 0 0 3px rgba(73, 139, 184, 0.16);
 }
 
-.logo-chip:hover img {
+.logo-item:hover img {
 	filter: grayscale(0) opacity(1);
+}
+
+/* Django and Flask's marks are near-black in every official variant, so the
+   grayscale-on-dark-chip treatment leaves them invisible at rest; give just
+   these two a light backing so they read like the rest of the row. */
+.logo-item--dark-mark {
+	background: #6e727a;
+}
+
+.logo-item--dark-mark img {
+	opacity: 0.85;
+}
+
+.logo-item--dark-mark:hover img {
+	opacity: 1;
+}
+
+.logo-item:hover {
+	transform: translateY(-2px);
 }
 
 /* ---------- Footer / contact ---------- */
@@ -617,7 +644,7 @@ main [id] {
 	border-radius: 999px;
 	border: 1px solid rgba(255, 255, 255, 0.25);
 	background: rgba(255, 255, 255, 0.06);
-	color: #fff;
+	color: var(--text);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -656,7 +683,7 @@ main [id] {
 	border-radius: 999px;
 	border: 1px solid rgba(255, 255, 255, 0.25);
 	background: rgba(255, 255, 255, 0.06);
-	color: #fff;
+	color: var(--text);
 	display: flex;
 	align-items: center;
 	justify-content: center;
